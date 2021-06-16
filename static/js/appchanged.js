@@ -68,17 +68,17 @@ function XsetupCharts(sample){
             marker:{
                 size:sample_values,
                 color: otu_ids,
-                colorscale:"Electric"
+                colorscale:"Plasma"
             }
         };
 
         var bubble_data = [traceBubble];
         var bubble_layout = {
-            title: '# Bacteria Cultures per Sample',
+            title: '# of Bacteria Cultures per Sample',
             showLegend: true,
             hovermode:'closest',
             xaxis: {title:"OTU (Operational Taxonomic Unit) ID" + sample},
-            font: {color: "#49a91d", family: "Arial, Helvtetica, sans-serif"},
+            font: {color: "#1d30a9", family: "Arial, Helvtetica, sans-serif"},
             margin: {t:30}
 
         };
@@ -97,7 +97,7 @@ function XsetupCharts(sample){
         var horizontal_layout = {
             title: "Top Ten OTUs for Individual "+sample,
             margin: {l:100, r:100, t:100, b:100},
-            font: {color: "#49a91d", family: "Arial, Helvtetica, sans-serif"},
+            font: {color: "#1d30a9", family: "Arial, Helvtetica, sans-serif"},
         };
 
         Plotly.newPlot("bar", horizontal_data, horizontal_layout);
@@ -131,9 +131,9 @@ function XsetupMetaData(sample){
             height: 450,
             margin: {l:100, r:100, t:100, b:100},
             line:{
-                color: '600000'
+                color: '#631da9'
             },
-            font: {color: "#49a91d", family: "Arial, Helvtetica, sans-serif"},
+            font: {color: "#1d30a9", family: "Arial, Helvtetica, sans-serif"},
         };
 
         Plotly.newPlot("gauge", gaugeData,gauge_layout);
