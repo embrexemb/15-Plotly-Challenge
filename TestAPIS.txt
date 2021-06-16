@@ -1,1 +1,0 @@
-https://www.quandl.com/api/v3/datasets/WIKI/IBM.json?start_date=2016-10-01&end_date=2017-10-01&api_key=cTjtKuUXnQ2BzRKLyv5W
