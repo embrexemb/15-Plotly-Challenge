@@ -29,10 +29,11 @@ d3.json("samples.json").then((newData) => {
 
     
     }  //init()
+    
+    init();
 
 });
 
-init();
 
 
 var samp = "940";
